@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 🦑 Medias
+      - name: 🦑 Preeti
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: Preetiraj3697/metrics@latest
         with:
           filename: medias.svg
           token: ${{ secrets.TOKEN }}
@@ -34,7 +34,7 @@ jobs:
 
       - name: 🦑 Achievements
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses:  Preetiraj3697/metrics@latest
         with:
           filename: achievements.svg
           token: ${{ secrets.TOKEN }}
@@ -47,7 +47,7 @@ jobs:
 
       - name: 🦑 Sponsors
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: Preetiraj3697/metrics@latest
         with:
           filename: sponsors.svg
           token: ${{ secrets.TOKEN }}
@@ -59,7 +59,7 @@ jobs:
 
       - name: 🦑 General
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses:  Preetiraj3697/metrics@latest
         with:
           filename: general.svg
           token: ${{ secrets.TOKEN }}
